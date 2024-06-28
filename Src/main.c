@@ -32,16 +32,13 @@ int main(void){
 		//Check if button is pressed
 
 		if(GPIOC->IDR & BTN_PIN){
-
 			//Turn off LED
 			GPIOA->BSRR = LED_PIN;
 		}
 		else{
-
-			//Turn off
+			//Turn on LED
 			GPIOA->BSRR = (1U<<21);
 		}
 	}
-
 
 }
