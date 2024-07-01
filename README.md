@@ -1,3 +1,3 @@
 
 # STM32-UART-Drivers
->>>>>>> 8cb0bf0530d6335e67d1ca29fcf4c95832e66acf
+Bare-metal C code for transmitting data via UART from an STM32 microcontroller to a laptop.
