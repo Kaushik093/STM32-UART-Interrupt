@@ -1,9 +1,3 @@
-/*
- * uart.h
- *
- *  Created on: Jul 1, 2024
- *      Author: Kaushik Narayan
- */
 
 #ifndef UART_H_
 #define UART_H_
@@ -12,8 +6,11 @@
 #include <stdint.h>
 #include <stdio.h>
 
+#define RX_NEMPTY			(1U<<5)
+
 void uart2_rxtx_init(void);
-void uart_transmit(int ch);
+void uart2_rx_interrupt_init(void);
+//void uart_transmit(int ch);
 char uart_receive(void);
 int __io_putchar(int ch);
 
